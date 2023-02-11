@@ -1,0 +1,43 @@
+.header {
+    background-image: url(../images/french-bulldog-forest.jpeg);
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+}
+.header-nav__logo {
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    color: antiquewhite;
+}
+.header-nav__menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-nav__menu-item {
+    text-decoration: none;
+    color: antiquewhite;
+    font-size: 25px;
+}
+
+.header-nav__menu-item:hover {
+    text-decoration: underline;
+    color: bisque;
+}
+
+@media (min-width: 500px) {
+    
+    .header-nav {
+        display: flex;
+        align-items: center;
+    }
+    
+    .header-nav__menu {
+        display: flex;
+        flex-direction: row;
+        flex: 1;
+        justify-content: space-around;
+    }
+}
