@@ -1,127 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="shortcut icon" href="https://placekitten.com/96/139" type="image/x-icon">
-    <!--Add css style
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    -->
-    <link href="https://fonts.googleapis.com/css?family=Lobster"  rel="stylesheet" type="text/css">
+    <title>Dogs Page</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
+
 <body>
-    <!--HEADER-->
-  <header class="header">
-    <div class="container">
-        <h1>Dogs Life</h1>
-        <h2>
-            <small>Pictures and Videos</small>
-        </h2>
-    </div>
-  </header>
-  <!--NAVIGATION-->
-  <nav class="page-navigation">
-    <div class="container">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contacts</a></li>
-        </ul>
-        <!--LOGIN FORM-->
-        <form action="#" class="login">
-            <input type="text" placeholder="Login" required>
-            <input type="password" placeholder="Password" required>
-            <input type="submit" value="Sign in">
-        </form>
-
-    </div>
-  </nav>
-  <!--MAIN-->
-  <main>
-    <div class="container">
-        <h2 class="collection-title">Image Collection <small>🐾🐾🐾</small></h2>
-        <div class="collections">
-            <div class="collection-item-outer">
-                <div class="collection-item">
-                    <img src="images/french3.jpeg" alt="List picture" height="100">
-                    <div class="collection-text">
-                        <h3>List element item</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, saepe eligendi, animi rerum perferendis ad natus accusamus qui labore maiores, at quidem deleniti odit autem ex accusantium placeat? Impedit, officia?</p>
-                        <button>Read more</button>
-                    </div>
-                </div>
+    <header id="home" class="header">
+        <nav class="header-nav container">
+            <div class="header-nav__logo">Frenchies</div>
+            <div class="header-nav__menu">
+                <a href="#about" class="header-nav__menu-item">About</a>
+                <a href="#history" class="header-nav__menu-item">History</a>
+                <a href="#facts" class="header-nav__menu-item">Facts</a>
+                <a href="#contact" class="header-nav__menu-item">Contacts</a>
             </div>
-            <div class="collection-item-outer">
-                <div class="collection-item">
-                    <img src="images/french3.jpeg" alt="List picture" height="100">
-                    <div class="collection-text">
-                        <h3>List element item</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, saepe eligendi, animi rerum perferendis ad natus accusamus qui labore maiores, at quidem deleniti odit autem ex accusantium placeat? Impedit, officia?</p>
-                        <button>Read more</button>
-
-                    </div>
-                </div>
+        </nav>
+    </header>
+    <!--MAIN-->
+    <main>
+        <main>
+            <section id="about" class="about container">
+                <h2 class="about__title">About breed</h2>
+                <p class="about__text">The French bulldog is not simply a miniature bulldog. The most notable
+                    characteristic is the "bat" ear, which occurs naturally and is never cropped or altered. Also unique
+                    to the breed is the skull, which is flat between the ears. The French bulldog is a compact, muscular
+                    dog with a flat, short coat. Colors common to the breed include fawn, white and varieties of
+                    brindle. The male and female dog weight is 25-27 lbs.</p>  
+            </section>
+            <section id="history" class="history container">
+                <div class="history__text">
+                <h2 class="history__text-title">History</h2>
+                <p class="history__text-item">In the early 1800s, Normandy lace workers from England set off to find work in
+                    France. They took with them smaller bulldogs to be kept on the farms as companions and to chase away
+                    the rats. In these northern French farming communities, the popularity of this hardy dog grew
+                    quickly. In fact, established bulldog breeders in England were happy to perpetuate this "new" breed
+                    by selling their undersized dogs to the French.
+                    The dog is widely known as a very fashionable household companion kept by upper class and royalty.
+                    One French bulldog, insured for an incredible sum (at that time) of $750, traveled aboard the
+                    Titanic. In the late 1800s and early 1900s the French bulldog was considered a dog of high society;
+                    the breed still attracts people who appreciate the finer things in life.</p>
+                </div>    
+                <div class="history__image">
+                <img class="history__image-item" src="images/frenchie_history.jpeg" alt="history image of franchie">
+                </div>    
+            </section>
+            <section id="facts" class="facts">
+                <h2 class="facts__title">Fun Facts</h2>
+                <p class="facts__text-swim">French bulldogs can't swim … and they can't fly, either. Being in the flat-nosed family, flying on a
+                    plane can be life threatening and many airlines have banned all brachycephalic breeds. There are
+                    still ways to travel with a Frenchie; owners just need to take some extra precautions before hopping
+                    on a flight.</p>
+                <p class="facts__text-celebrity">Many celebrities love French bulldogs including John Legend, Madonna, and Lady Gaga. Carrie Fisher's
+                    Frenchie Gary became a mini celebrity himself, showing up everywhere the actress went, even the red
+                    carpet.</p>
+                <p class="facts__text-swim-talk">French bulldogs love to talk, and they definitely aren't afraid to speak their minds. Walter Geoffrey
+                    the Frenchie has thousands of subscribers on YouTube for his temper tantrums.</p>
+            </section>
+            <section id="contact" class="contacts container">
+                <h2>Contacts</h2>
+                <p>Have some questions?</p>
+                <form action="submit-form.php" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <input type="submit" value="Submit">
+                </form>
+            </section>
+        </main>
+        <!--FOOTER-->
+        <footer class="footer container">
+            <div>
+                <p>Made by Dmytro Gavrylov 2023</p>
             </div>
-            <div class="collection-item-outer">
-                <div class="collection-item">
-                    <img src="images/french3.jpeg" alt="List picture" height="100">
-                    <div class="collection-text">
-                        <h3>List element item</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, saepe eligendi, animi rerum perferendis ad natus accusamus qui labore maiores, at quidem deleniti odit autem ex accusantium placeat? Impedit, officia?</p>
-                        <button>Read more</button>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        <h2 class="collection-title">Video Collection <small>🐾🐾🐾</small></h2>
-        <div class="collections">
-            <div class="collection-item-outer">
-                <div class="collection-item">
-                    <video controls>
-                        <source src="videos/french1.mp4" type="video/mp4">
-                    </video>
-                    <div class="collection-text">
-                        <h3>List element item</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, saepe eligendi, animi rerum perferendis ad natus accusamus qui labore maiores, at quidem deleniti odit autem ex accusantium placeat? Impedit, officia?</p>
-                        <button>Read more</button>
-                    </div>
-                </div>
-            </div>
-            <div class="collection-item-outer">
-                <div class="collection-item">
-                    <video controls>
-                        <source src="videos/french2.mp4" type="video/mp4">
-                    </video>
-                    <div class="collection-text">
-                        <h3>List element item</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, saepe eligendi, animi rerum perferendis ad natus accusamus qui labore maiores, at quidem deleniti odit autem ex accusantium placeat? Impedit, officia?</p>
-                        <button>Read more</button>
-                    </div>
-                </div>
-            </div>
-            <div class="collection-item-outer">
-                <div class="collection-item">
-                    <video controls>
-                        <source src="videos/french3.mp4" type="video/mp4">
-                    </video>
-                    <div class="collection-text">
-                        <h3>List element item</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, saepe eligendi, animi rerum perferendis ad natus accusamus qui labore maiores, at quidem deleniti odit autem ex accusantium placeat? Impedit, officia?</p>
-                        <button>Read more</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-  </main>
-  <!--FOOTER-->
-  <footer class="footer">
-    <div class="container">
-        <p>Made by Dmytro Gavrylov 2023</p>
-    </div>
-  </footer>
+        </footer>
 </body>
 </html>

@@ -1,0 +1,18 @@
+.about {
+    background-image: url(../images/frenchie_about.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+}
+.about__title {
+    color: rgb(157, 106, 40);
+    font-size: 2rem;
+    display: flex;
+    padding-left: 5px;
+}
+.about__text {
+    display: flex;
+    text-align: right;
+    background-color: antiquewhite;
+    padding-right: 5px;   
+}
