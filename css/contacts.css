@@ -1,6 +1,82 @@
-.contact__area-form {
+.contact__area {
     display: flex;
     flex-direction: column;
     text-align: left;
-    width: 400px;
+    align-items: flex-start;
+    background-image: url(../images/two-frenchies.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 120vw;
+    justify-content: right;
+}
+.contact__area-form {
+    display: flex;
+    flex-direction: column;
+    background: rgba(24, 78, 133, 0.82);
+    align-items: center;
+    justify-content: space-around;
+    font-size: 20px;
+    border-radius: 15px;
+    margin-bottom: 5px;
+    margin: 10px;
+    height: 80vw;
+    width: 300px;
+}
+input,
+textarea,
+button {
+  width: 180px;
+  height: 30px;
+  padding: 0;
+  margin: 0;
+  background: rgb(24, 78, 133, 0);
+  box-sizing: border-box;
+  border-color: darkblue;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.contact__area-title {
+font-size: 3rem;
+color: rgb(96, 108, 214);
+}
+.contact__area-text {
+    font-size: 3rem;
+    color: bisque;
+    padding-bottom: 10px;
+}
+@media (min-width: 500px) {
+    .contact__area {
+        display: flex;
+        flex-direction: row;
+        flex: 1;
+        align-items: center;
+    }
+    .contact__area-title {
+        align-self: flex-start;
+        flex: 1;
+    }
+
+    .contact__area-text {
+        flex: 1;
+        justify-content: flex-start ;
+    }
+    .contact__area-form {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        align-items: center;
+        justify-content: center;
+        padding: 50px;
+        max-height: 70vw;
+        padding-right: 10px;
+        
+    }
+    input,
+    textarea,
+    button {
+        width: 200px;
+        height: 40px;
+    }
 }
