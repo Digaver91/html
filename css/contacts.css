@@ -13,14 +13,8 @@
     display: flex;
     flex-direction: column;
     background: rgba(24, 78, 133, 0.82);
-    align-items: center;
-    justify-content: space-around;
-    font-size: 20px;
-    border-radius: 15px;
-    margin-bottom: 5px;
-    margin: 10px;
-    height: 80vw;
-    width: 300px;
+    
+   
 }
 input,
 textarea,
@@ -38,15 +32,15 @@ button {
 }
 
 .contact__area-title {
-font-size: 3rem;
+font-size: 32px;
 color: rgb(96, 108, 214);
 }
 .contact__area-text {
-    font-size: 3rem;
+    font-size: 32px;
     color: bisque;
     padding-bottom: 10px;
 }
-@media (min-width: 500px) {
+@media (min-width: 7680px) {
     .contact__area {
         display: flex;
         flex-direction: row;
