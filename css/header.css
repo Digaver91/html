@@ -25,7 +25,7 @@
 
 .header-nav__menu-item:hover {
     text-decoration: underline;
-    color: bisque;
+    color: rgb(211, 12, 237);
 }
 
 @media (min-width: 650px) {
@@ -33,6 +33,7 @@
     .header-nav {
         display: flex;
         align-items: center;
+        background-color: black;
     }
     
     .header-nav__menu {
@@ -40,5 +41,30 @@
         flex-direction: row;
         flex: 1;
         justify-content: space-around;
+        background-color: black;
     }
 }
+
+@keyframes changeColor {
+    0% {
+      color: antiquewhite;
+    }
+    50% {
+      color: burlywood;
+    }
+    100% {
+      color: bisque;
+    }
+  }
+
+  .header-nav__logo {
+    animation-name: changeColor;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+  }
+
+  
+  
+  
+  
+  
