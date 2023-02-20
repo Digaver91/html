@@ -1,70 +1,69 @@
 .header {
-    background-image: url(../images/french-bulldog-forest.jpeg);
-    background-position: center;
-    background-size: cover;
-    height: 80vh;
-    background-attachment: fixed;
+  background-image: url(../images/french-bulldog-forest.jpeg);
+  background-position: center;
+  background-size: cover;
+  height: 80vh;
+  background-attachment: fixed;
 }
+
 .header-nav__logo {
-    font-size: 2.5rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-align: center;
-    color: antiquewhite;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  color: antiquewhite;
 }
+
 .header-nav__menu {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .header-nav__menu-item {
-    text-decoration: none;
-    color: antiquewhite;
-    font-size: 25px;
+  text-decoration: none;
+  color: antiquewhite;
+  font-size: 25px;
+  width: 100px;
 }
 
 .header-nav__menu-item:hover {
-    text-decoration: underline;
-    color: rgb(211, 12, 237);
+  text-decoration: underline;
+  color: rgb(14, 155, 221);
 }
 
 @media (min-width: 650px) {
-    
-    .header-nav {
-        display: flex;
-        align-items: center;
-        background-color: black;
-    }
-    
-    .header-nav__menu {
-        display: flex;
-        flex-direction: row;
-        flex: 1;
-        justify-content: space-around;
-        background-color: black;
-    }
+
+  .header-nav {
+    display: flex;
+    align-items: center;
+    background-color: black;
+  }
+
+  .header-nav__menu {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: space-around;
+    background-color: black;
+  }
 }
 
 @keyframes changeColor {
-    0% {
-      color: antiquewhite;
-    }
-    50% {
-      color: burlywood;
-    }
-    100% {
-      color: bisque;
-    }
+  0% {
+    color: antiquewhite;
   }
 
-  .header-nav__logo {
-    animation-name: changeColor;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
+  50% {
+    color: rgb(14, 155, 221);;
   }
 
-  
-  
-  
-  
-  
+  100% {
+    color: bisque;
+  }
+}
+
+.header-nav__logo {
+  animation-name: changeColor;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
