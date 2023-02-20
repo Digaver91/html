@@ -2,6 +2,27 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    padding: 0 0 5px 5px;
-    background-color: transparent;
+    
+    background-color: black;
+}
+.footer__text {
+    color: antiquewhite;
+    padding-right: 20px;
+}
+.footer__social {
+display: flex;
+flex-direction: row;
+align-self: flex-end;
+padding: 10px;
+}
+.footer__social-item img {
+    height: 50px;
+}
+
+@media (min-width: 650px) {
+    .footer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
 }
