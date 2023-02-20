@@ -10,3 +10,21 @@ font-size: 2rem;
 .history__text-item {
     padding: 5px;
 }
+
+@media (min-width: 650px) {
+    .history {
+        display: flex;
+        flex-direction: row;
+    }
+    .history__text {
+        width: 50%;
+    }
+    .history__image {
+        width: 50%;
+    }
+    .history__image-item {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+}

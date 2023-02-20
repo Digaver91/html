@@ -11,3 +11,7 @@ display: flex;
  height: 100%;
  object-fit: cover;
 }
+@media (min-width: 650px) {
+    .carousel-inner {
+        height: 100vh;
+}
