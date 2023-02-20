@@ -6,10 +6,10 @@
     background-attachment: fixed;
     margin-top: 20px;
     margin-bottom: 20px;
-    height: 90vh;
+    height: 100vh;
     align-items: center;
 }
-.contact__area-form {
+.contact__form-item {
     display: flex;
     flex-direction: column;
     background-color: rgba(18, 237, 237, 0.826);
@@ -61,37 +61,30 @@ align-self: center;
 color: rgb(119, 25, 196);
 font-size: 18px;
 }
-@media (min-width: 7680px) {
-    .contact__area {
+
+@media (min-width: 650px) {
+    .contact {
         display: flex;
         flex-direction: row;
-        flex: 1;
-        align-items: center;
     }
-    .contact__area-title {
-        align-self: flex-start;
-        flex: 1;
-    }
-
-    .contact__area-text {
-        flex: 1;
-        justify-content: flex-start ;
-    }
-    .contact__area-form {
+    .contact__area {
         display: flex;
         flex-direction: column;
-        flex: 1;
-        align-items: center;
-        justify-content: center;
-        padding: 50px;
-        max-height: 70vw;
-        padding-right: 10px;
-        
+        width: 50%;
     }
-    input,
-    textarea,
-    button {
-        width: 200px;
-        height: 40px;
+    .contact__form {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        margin-right: 40px;
+    }
+    .contact__area-text {
+        padding: 40px;
+        font-size: 30px;
+        margin-bottom: 150px;
+
+    }
+    .contact__area-title {
+        margin-bottom: 200px;
     }
 }
